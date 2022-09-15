@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder</title>
+        <script src="https://kit.fontawesome.com/2072f7b46a.js" crossorigin="anonymous"></script>
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Comfortaa&family=Tangerine&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/city.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <i class="fa-solid fa-city"></i>
+            <h1>City Builder</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="build-section">
+                <label>Name <input id="name-input" value="Cool Town" /></label>
+                <label
+                    >Climate
+                    <select id="climate-select">
+                        <option value="desert">Desert</option>
+                        <option value="tropical">Tropical</option>
+                        <option value="polar">Polar</option>
+                    </select></label
+                >
+                <label
+                    >Architecture
+                    <select id="architecture-select">
+                        <option value="modern">Modern</option>
+                        <option value="gothic">Gothic</option>
+                        <option value="beaux-arts">Beaux-Arts</option>
+                    </select></label
+                >
+                <label
+                    >Add Attraction
+                    <div class="add-attraction">
+                        <input id="attraction-input" />
+                        <button id="add-button">+</button>
+                    </div>
+                </label>
+            </section>
+            <article id="city-article" class="">
+                <h1>Welcome to <span id="name-display"></span>...</h1>
+                <div class="images">
+                    <img id="climate-image" src="" alt="desert" />
+                    <img id="architecture-image" src="" alt="modern" />
+                </div>
+                <ul id="attraction-list"></ul>
+            </article>
+        </main>
+    </body>
 </html>
