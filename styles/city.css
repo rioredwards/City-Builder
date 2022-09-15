@@ -88,3 +88,27 @@ article {
     align-items: center;
     gap: 1rem;
 }
+
+.desert {
+    background-color: #e0b374;
+}
+
+.tropical {
+    background-color: #83e7d5;
+}
+
+.polar {
+    background-color: #83b0e7;
+}
+
+.beaux-arts {
+    font-family: 'Tangerine', cursive;
+}
+
+.modern {
+    font-family: 'Comfortaa', cursive;
+}
+
+.gothic {
+    font-family: 'Cinzel Decorative', cursive;
+}
