@@ -12,10 +12,16 @@ let city = {
     attractions: [],
 };
 
-/* Events */
+/* Helper Functions */
 function pageLoad() {
     displayCity();
 }
+
+/* Events */
+nameInput.addEventListener('input', () => {
+    city.name = nameInput.value;
+    displayCity();
+});
 
 /* Display Functions */
 function displayCity() {
